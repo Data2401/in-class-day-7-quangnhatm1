@@ -1,0 +1,81 @@
+---
+title: "In Class Lab"
+author: "Dr. Shoemaker"
+date: "DATA 2401"
+output: html_document
+---
+**Note: Your exam will be in a similar format to this (RMarkdown File with Questions and Code chunks for your answers), so make sure you have the process for knitting to html working.** 
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## In Class Exercises
+
+### Set 1 
+
+1. Use the colon operator : to create a vector `n` of numbers from 10:49
+2. Use the `length()` function to get the number of elements in `n`
+3. Add 1 to each element in `n` and print the result
+4. Create a vector `m` that contains the numbers 10 to 1 (in that order), in two different ways, neither of which is just typing "10, 9 , 8 ...".  Hint: use one of the helper functions we learned.
+5. Subtract `m` FROM `n`. Note the recycling!
+
+### Set 2 
+
+1. Use the `seq()` function to produce a range of numbers from -5 to 10 in `0.1` increments. Store it in a variable `x_range`
+2. Create a vector `sin_wave` by calling the `sin()` function on each element in `x_range`.
+3. Use the `plot()` function to plot your "wave"!
+     + the x vector goes in the first argument, the y vector goes in the second argument
+     + You'll need to add the argument `type = "l"` for a line. NOTE: That is a lower case "L", not a 1. 
+
+
+### Set 3 
+
+1. Use `:` to make a vector of the integers from 40 to 50 called `first_nums`
+2. Use `seq()` to make a vector of the integers from 51 to 60 called `next_nums`
+3. Combine them using `c()`
+4. Use indexing to access the 7th number in your combined vector
+5. Use indexing to access the 5th to the 8th numbers in your combined vector
+6. Use indexing to create a new vector that contains the first 3 elements and last 3 elements of your combined vector. 
+7. Bonus/extra: do the above in a way that would work no matter how long the vector is (as long as it's longer than 2 elements)
+
+## In Class Activity
+
+1. Write a function to simulate rolling a 6-sided die and returns the result.
+
+```{r}
+
+```
+
+
+
+1. Write a function to simulate rolling 2 6-sided dice that returns the sum of the rolls. 
+
+```{r}
+
+
+```
+
+
+1. Write a function that takes two people name's as strings, simulates rolling a 6-sided die for each of the names, then returns the name of the person with the higher roll. The function should reroll once on a tie, but if there is a second tie, it should return "draw". 
+
+```{r}
+# Your one-roll function goes here
+
+```
+
+
+2. Write a second function (you may start by modifying the first one) that takes two names as strings, simulates both of them rolling die 15 times, and returns the name of the person who "won" more rolls. Don't reroll ties this time, but don't count them as "wins". 
+
+```{r}
+
+
+```
+
+
+3. Modify your function from (2) so that the person in the first argument has a die that is weighted to get higher numbers more often (you may decide the actual percentage change). Run the function ten or so times. Does the second person ever win?
+
+```{r}
+# Your "cheating" function goes here
+```
+
